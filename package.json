@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kartik1998/kafka-deck/issues"
   },
-  "homepage": "https://github.com/kartik1998/kafka-deck#readme"
+  "homepage": "https://github.com/kartik1998/kafka-deck#readme",
+  "dependencies": {
+    "kafkajs": "^1.15.0"
+  }
 }
