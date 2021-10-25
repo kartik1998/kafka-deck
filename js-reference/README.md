@@ -1,5 +1,6 @@
 ## Kafka Node Reference
 
+- To setup first run `docker-compose up` in the root directory
 - To create the users topic first run: `node topic.js`
   - Sample output:
 
