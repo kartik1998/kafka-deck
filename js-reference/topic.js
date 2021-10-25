@@ -1,4 +1,4 @@
-const { Kafka } = require("kafkajs");
+const { Kafka } = require('kafkajs');
 
 global.log = (message) => {
   console.log(`[${new Date().toISOString()}] ${message}`);
@@ -8,14 +8,14 @@ async function run() {
   try {
     /* create an admin tcp connection */
     const kafka = new Kafka({
-      clientId: "myapp",
-      brokers: ["localhost:29092"],
+      clientId: 'myapp',
+      brokers: ['localhost:29092'],
     });
 
     const admin = kafka.admin();
-    log("connecting...");
+    log('connecting...');
     await admin.connect();
-    log("connected!..");
+    log('connected!..');
 
     /**
      * create "Users" topic with 2 partitions [A - M, N - Z]
@@ -23,7 +23,7 @@ async function run() {
     await admin.createTopics({
       topics: [
         {
-          topic: "Users",
+          topic: 'Users',
           numPartitions: 2,
         },
       ],

@@ -1,7 +1,7 @@
 ## Kafka Node Reference
 
 - To create the users topic first run: `node topic.js`
-  - Sample output: 
+  - Sample output:
 
 ```
 [2021-10-25T17:36:07.561Z] connecting...
